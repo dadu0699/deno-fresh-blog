@@ -4,7 +4,6 @@ import { Head } from "$fresh/runtime.ts";
 import { CSS } from "gfm/mod.ts";
 
 import { loadPost } from "../../utils/posts.ts";
-import Body from "../../layouts/Body.tsx";
 import ReturnIcon from "../../components/ReturnIcon.tsx";
 
 export const handler: Handlers = {
@@ -24,48 +23,46 @@ export default function PagePost(props: PageProps) {
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
 
-      <Body>
-        <article class="flex-grow container md:max-w-2xl px-4 pt-16 mx-auto">
-          <section class="fixed top-0 left-0 p-4 z-50 min-w-full bg-white md:bg-transparent dark:bg-gray-900 dark:md:bg-transparent">
-            <a
-              class="flex content-center items-center p-2 max-w-min rounded-lg text-sm md:text-base hover:bg-gray-200 dark:hover:bg-gray-800"
-              href="/"
-            >
-              <ReturnIcon />
-              Back
-            </a>
+      <article class="flex-grow container md:max-w-2xl px-4 pt-16 mx-auto">
+        <section class="fixed top-0 left-0 p-4 z-50 min-w-full bg-white md:bg-transparent dark:bg-gray-900 dark:md:bg-transparent">
+          <a
+            class="flex content-center items-center p-2 max-w-min rounded-lg text-sm md:text-base hover:bg-gray-200 dark:hover:bg-gray-800"
+            href="/"
+          >
+            <ReturnIcon />
+            Back
+          </a>
+        </section>
+
+        <header>
+          <section class="flex space-x-2 max-w-max mx-auto text-xs md:text-base text-gray-500 dark:text-gray-400 font-medium">
+            <time>
+              {new Intl.DateTimeFormat("en-GT", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              }).format(post.date)}
+            </time>
+            <span>•</span>
+            <span>2 min read</span>
           </section>
 
-          <header>
-            <section class="flex space-x-2 max-w-max mx-auto text-xs md:text-base text-gray-500 dark:text-gray-400 font-medium">
-              <time>
-                {new Intl.DateTimeFormat("en-GT", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                }).format(post.date)}
-              </time>
-              <span>•</span>
-              <span>2 min read</span>
-            </section>
+          <h1 class="mt-2 mb-12 text-3xl md:text-4xl font-extrabold md:text-center">
+            {post.title}
+          </h1>
+        </header>
 
-            <h1 class="mt-2 mb-12 text-3xl md:text-4xl font-extrabold md:text-center">
-              {post.title}
-            </h1>
-          </header>
-
-          <div
-            data-color-mode="auto"
-            data-light-theme="light"
-            data-dark-theme="dark"
-            class={`${"markdown-body"} container mx-auto`}
-            style={{
-              backgroundColor: "transparent !important",
-            }}
-            dangerouslySetInnerHTML={{ __html: post.body }}
-          />
-        </article>
-      </Body>
+        <div
+          data-color-mode="auto"
+          data-light-theme="light"
+          data-dark-theme="dark"
+          class={`${"markdown-body"} container mx-auto`}
+          style={{
+            backgroundColor: "transparent !important",
+          }}
+          dangerouslySetInnerHTML={{ __html: post.body }}
+        />
+      </article>
     </>
   );
 }
