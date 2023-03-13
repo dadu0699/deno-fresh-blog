@@ -1,5 +1,5 @@
-import { Handlers, PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
 
 import { CSS } from "gfm/mod.ts";
 
@@ -20,6 +20,7 @@ export default function PagePost(props: PageProps) {
   return (
     <>
       <Head>
+        <title>Post - {post.title}</title>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
 
