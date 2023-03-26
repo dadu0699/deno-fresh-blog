@@ -31,7 +31,7 @@ export default function PagePost(props: PageProps) {
         </style>
       </Head>
 
-      <article class="flex-grow container md:max-w-2xl px-4 pt-16 mx-auto">
+      <article class="flex-grow container md:max-w-2xl px-4 pt-[4.5rem] mx-auto">
         <section class="fixed top-0 left-0 p-4 z-50 min-w-full bg-white md:bg-transparent dark:bg-gray-900 dark:md:bg-transparent">
           <a
             class="flex content-center items-center p-2 max-w-min rounded-lg text-sm md:text-base hover:bg-gray-200 dark:hover:bg-gray-800"
