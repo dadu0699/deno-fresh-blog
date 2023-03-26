@@ -57,6 +57,7 @@ y el ambiente a través del limite estos pueden ser:
    <img
       src="https://res.cloudinary.com/djpxci1kg/image/upload/Privados/795-logica-de-sistemas/EsquemaGraficoGeneraldeunSistema_uxdres.webp"
       alt="Esquema gráfico general de un sistema"
+      height="400"
       width="400"
    >
   <figcaption>Esquema gráfico general de un sistema</figcaption>
