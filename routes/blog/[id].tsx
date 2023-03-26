@@ -22,6 +22,13 @@ export default function PagePost(props: PageProps) {
       <Head>
         <title>Post - {post.title}</title>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
+        <style>
+          {`
+            figure img {
+              margin: auto;
+            }
+          `}
+        </style>
       </Head>
 
       <article class="flex-grow container md:max-w-2xl px-4 pt-16 mx-auto">
@@ -45,10 +52,10 @@ export default function PagePost(props: PageProps) {
               }).format(post.date)}
             </time>
             <span>•</span>
-            <span>2 min read</span>
+            <span>?? min read</span>
           </section>
 
-          <h1 class="mt-2 mb-12 text-3xl md:text-4xl font-extrabold md:text-center">
+          <h1 class="mt-3 mb-10 text-3xl md:text-4xl font-extrabold md:text-center">
             {post.title}
           </h1>
         </header>
@@ -58,9 +65,7 @@ export default function PagePost(props: PageProps) {
           data-light-theme="light"
           data-dark-theme="dark"
           class={`${"markdown-body"} container mx-auto`}
-          style={{
-            backgroundColor: "transparent !important",
-          }}
+          style={{ backgroundColor: "transparent !important" }}
           dangerouslySetInnerHTML={{ __html: post.body }}
         />
       </article>
