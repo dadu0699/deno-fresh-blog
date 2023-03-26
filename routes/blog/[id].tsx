@@ -10,6 +10,9 @@ export const handler: Handlers = {
   async GET(_request, context) {
     const { id } = context.params;
     const post = await loadPost(id);
+
+    if (!post) return context.renderNotFound();
+
     return context.render({ post });
   },
 };
