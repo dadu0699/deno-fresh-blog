@@ -121,7 +121,7 @@ los diferentes sistemas mencionados.
   (Rio, bosque, molecula del agua)
 
 - **Sistemas Físicos Diseñados**: Se parece a un sistema natural solo que esta
-  hecho por el hombre.Este tipo de sistema existe porque es necesitado por un
+  hecho por el hombre. Este tipo de sistema existe porque es necesitado por un
   sistema de actividad humana y no existe en el mundo real. (Edificio, puente,
   carro)
 
@@ -266,7 +266,7 @@ estructura lógica de los juicios del cual se compone n las premisas.
 #### **El Reduccionismo Lógico**
 
 Hemos definido etimológicamente que es lógica, que estudia y se ha mencionado la
-importancia de conocer sus leyes, ahora la pregunta es ¿Es la lógica es una
+importancia de conocer sus leyes, ahora la pregunta es ¿Es la lógica una
 ciencia?
 
 Algunos científicos y hasta filósofos, le han negado a la lógica el carácter de
@@ -346,7 +346,7 @@ en sus respectivos campos, lo que permite ver que no son ciencias aisladas.
 
 #### **Lógica y Sociología**
 
-Según la sociología , el pensamiento y sus leyes dependen del grupo social. Este
+Según la sociología, el pensamiento y sus leyes dependen del grupo social. Este
 es el que impone las normas a que debe ajustarse y esas normas no son sino las
 que han demostrado a través del tiempo, ser eficaces. El grupo social, para
 mantener su cohesión, impone no solo tales o cuales ideas, sino también y
