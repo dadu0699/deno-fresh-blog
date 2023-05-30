@@ -29,7 +29,7 @@ export default function NotFoundPage({ url }: UnknownPageProps) {
         </svg>
 
         <h6 class="mb-2 text-2xl font-bold text-center md:text-3xl">
-          <span class="text-red-500">Oops!</span> Page not found
+          <span class="text-pink-600">Oops!</span> Page not found
         </h6>
       </div>
     </section>
