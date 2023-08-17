@@ -1,4 +1,4 @@
-import { extract } from "$std/encoding/front_matter/any.ts";
+import { extract } from "$std/front_matter/any.ts";
 import { render } from "gfm/mod.ts";
 
 import { Post } from "../types.d.ts";
