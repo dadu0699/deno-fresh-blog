@@ -2,27 +2,28 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_404.tsx";
-import * as $1 from "./routes/_500.tsx";
-import * as $2 from "./routes/_app.tsx";
-import * as $3 from "./routes/api/joke.ts";
-import * as $4 from "./routes/blog/[id].tsx";
-import * as $5 from "./routes/index.tsx";
-import * as $$0 from "./islands/LikeButton.tsx";
+import * as $_404 from "./routes/_404.tsx";
+import * as $_500 from "./routes/_500.tsx";
+import * as $_app from "./routes/_app.tsx";
+import * as $api_joke from "./routes/api/joke.ts";
+import * as $blog_id_ from "./routes/blog/[id].tsx";
+import * as $index from "./routes/index.tsx";
+import * as $LikeButton from "./islands/LikeButton.tsx";
+import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/_404.tsx": $0,
-    "./routes/_500.tsx": $1,
-    "./routes/_app.tsx": $2,
-    "./routes/api/joke.ts": $3,
-    "./routes/blog/[id].tsx": $4,
-    "./routes/index.tsx": $5,
+    "./routes/_404.tsx": $_404,
+    "./routes/_500.tsx": $_500,
+    "./routes/_app.tsx": $_app,
+    "./routes/api/joke.ts": $api_joke,
+    "./routes/blog/[id].tsx": $blog_id_,
+    "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/LikeButton.tsx": $$0,
+    "./islands/LikeButton.tsx": $LikeButton,
   },
   baseUrl: import.meta.url,
-};
+} satisfies Manifest;
 
 export default manifest;
